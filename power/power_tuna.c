@@ -57,6 +57,8 @@ static void tuna_power_init(struct power_module *module)
                 "20000");
     sysfs_write("/sys/devices/system/cpu/cpufreq/interactive/min_sample_time",
                 "25000");
+    sysfs_write("/sys/devices/system/cpu/cpufreq/interactive/hispeed_freq",
+                "729600");
     sysfs_write("/sys/devices/system/cpu/cpufreq/interactive/io_is_busy",
                 "1");
 }
